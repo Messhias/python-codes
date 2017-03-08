@@ -1,10 +1,6 @@
-pizza = {
-	'crust'		:	'trick',
-	'toopings'	:	['mushrooms','extra cheese'],
-}
-
-print ("You ordered a " + pizza['crust'] + "-crust pizza " + 
-		"with the following toppings: ")
-		
-for toopings in pizza['toopings']:
-	print("\t" + toopings)
+def make_pizza(size,*toppings):
+	""" LIST INGRIEDIENTS """
+	print("\n The pizza's size is " + str(size))
+	
+	for toppings in toppings:
+		print("\n- " + toppings)
