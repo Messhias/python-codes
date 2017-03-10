@@ -28,17 +28,3 @@ class Car():
 		""" INCREMENT ODOMETER WITH A VALUE """
 		self.odometer += miles
 
-
-newCar = Car("TOYOTA","COROLLA",2000,10)
-
-print(newCar.get_description())
-
-newCar.update_odometer(1300)
-
-print(newCar.read_odometer())
-
-newCar.update_odometer(10)
-
-newCar.increment_odometer(400)
-
-print(newCar.read_odometer())
