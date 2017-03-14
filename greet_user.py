@@ -1,7 +1,7 @@
-def greet_user(username):
-	"""
-		FUNCTION TO SAY HELLO TO A USER
-	"""
-	print("Hello, " + username.title() + "!")
-	
-greet_user('William')
+import json
+
+filename = 'username.json'
+
+with open(filename) as f_obj:
+	username = json.load(f_obj)
+	print("Welcome back, " + username + "!")
